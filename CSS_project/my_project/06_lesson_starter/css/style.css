@@ -1,0 +1,19 @@
+/* 
+Typography
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  padding: 5%;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* input,
+button {
+  font: inherit;
+} */
