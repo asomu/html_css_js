@@ -42,6 +42,7 @@ footer {
 
 header {
   top: 0;
+  color: red;
 }
 
 nav {
@@ -53,14 +54,16 @@ nav {
   justify-content: space-evenly;
 }
 
-nav a,
-nav a:visited {
+nav a:any-link {
   color: #000;
 }
 
-nav a:hover,
-nav a:focus {
+nav :is(a:hover, a:focus) {
   color: hsla(0, 0%, 20%, 0.6);
+}
+
+nav a:active {
+  color: red;
 }
 
 main {
@@ -89,6 +92,9 @@ footer {
   align-items: center;
 }
 
+.card:target {
+  border: 2px solid rebeccapurple;
+}
 .card figure {
   display: flex;
   flex-flow: column nowrap;
@@ -97,6 +103,43 @@ footer {
 .card img {
   border: 5px double #333;
   border-radius: 50%;
+}
+
+.card img:not([alt]) {
+  border: 10px solid red;
+}
+
+.card:nth-child(even) {
+  background-color: papayawhip;
+}
+
+.card figcaption::after {
+  content: " ✨";
+  display: block;
+}
+
+.card p {
+  position: relative;
+}
+
+.card p::before {
+  content: open-quote;
+  font-size: 3em;
+  position: absolute;
+  top: -0.25em;
+  left: -0.5em;
+}
+
+.card p::after {
+  content: close-quote;
+  font-size: 3em;
+  position: absolute;
+  top: -0.25em;
+  right: -0.5em;
+}
+
+.card figcaption::first-line {
+  font-size: 3rem;
 }
 
 .card figcaption {
