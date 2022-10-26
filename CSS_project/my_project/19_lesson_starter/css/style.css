@@ -42,11 +42,11 @@ footer {
 
 header {
   top: 0;
-  color: red;
+  color: gold;
 }
 
 nav {
-  background-color: #fff;
+  background-color: yellow;
   padding: 0.5rem;
   border-bottom: 2px solid #000;
   font-weight: bolder;
@@ -81,7 +81,7 @@ footer {
 
 /* || PROFILE CARD */
 .card {
-  scroll-margin-top: 8rem;
+  scroll-margin-top: 1rem;
   width: min(100%, 350px);
   background-color: #cbd5e1;
   border: 2px solid #000;
