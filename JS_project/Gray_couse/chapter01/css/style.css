@@ -109,7 +109,7 @@ and display:flex for the example you want to see. */
 .view1 {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: none;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;

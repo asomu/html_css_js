@@ -1,35 +1,12 @@
-const view1 = document.getElementById("view1");
-// console.log(view1);
+//Modules
+import * as Guitar from "./guitars.js";
+import User from "./user.js";
 
-const view2 = document.querySelector(".view2");
-const div = view2.querySelector("div");
-const h2 = div.querySelector("h2");
-console.log(view2);
+const me = new User("email@email.com", "Dave");
 
-view2.style.display = "flex";
+console.log(me);
+console.log(me.greeting());
 
-view2.addEventListener(
-  "click",
-  (evnet) => {
-    view2.classList.toggle("purple");
-    view2.classList.toggle("darkblue");
-    console.log("Add");
-  },
-  false
-);
-
-div.addEventListener(
-  "click",
-  (evnet) => {
-    evnet.target.style.backgroundColor = "blue";
-  },
-  false
-);
-
-h2.addEventListener(
-  "click",
-  (evnet) => {
-    evnet.target.textContent = "Clicked";
-  },
-  false
-);
+console.log(Guitar.playGuitar());
+console.log(Guitar.shredding());
+console.log(Guitar.plucking());
