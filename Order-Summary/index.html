@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order-Summary</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div calss="card">
-        <img class="hero-image" src="./template/images/illustration-hero.svg" alt="Hero image">
-        <div class="container">
-            <h2 class="title">Order Summary</h2>
-            <p class="order-description">
-                You can now listen to millions of songs, audiobooks, and podcasts on any
-                 device anywhere you like!
-            </p>
-        </div>
-    </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order-Summary Component</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="card">
+      <img
+        class="hero-image"
+        src="images/illustration-hero.svg"
+        alt="Hero image"
+      />
+      <article class="container">
+        <h2 class="title">Order Summary</h2>
+        <p class="order-description">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <section class="plan-container">
+          <img src="./images/icon-music.svg" alt="icon-music" />
+          <div class="plan-description">
+            <strong>Annual plan</strong>
+            <p>$55.99/year</p>
+          </div>
+          <a href="#">Change</a>
+        </section>
+        <button class="button proceed-button">Proceed to payment</button>
+        <button class="button cancel-button">Cancel order</button>
+      </article>
+    </section>
+  </body>
 </html>
