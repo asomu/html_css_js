@@ -1,0 +1,14 @@
+#FizzBuzz
+#0. 1~100
+#1. 3의 배수는 Fizz
+#2. 5의 배수는 Buzz
+#3. 3과 5의 배수는 FizzBuzz
+for i in range(1, 101):
+    if (i%3 == 0) & (i%5 == 0):
+        print(f"{i}: FizzBuzz")
+    elif i%3 == 0:
+        print(f"{i}: Fizz")
+    elif i%5 == 0:
+        print(f"{i}: Buzz")
+    else:
+        print(f"{i}: {i}")
