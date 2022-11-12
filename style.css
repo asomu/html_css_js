@@ -1,0 +1,24 @@
+.name {
+  background-color: red;
+  color: aqua;
+  font-size: 100px;
+  display: inline;
+}
+
+.test {
+  font-size: 2rem;
+  background-color: brown;
+  color: mediumspringgreen;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 50px;
+}
+.contain {
+  display: flex;
+  margin: 50px auto;
+}
+
+.img {
+  width: 600px;
+  border-radius: 200px;
+}
